@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebFilter(filterName="CorsFilter", urlPatterns="/rs/*")
 public class CorsFilter implements Filter {
 
-	private String originPermitido = "http://localhost:8000"; // TODO: Configurar para diferentes ambientes.
+	private String originPermitido = "http://localhost:4200"; // TODO: Configurar para diferentes ambientes.
 
 	@Override
 	public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain)
